@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import './Edit.css';
 
 //////////////////////////////////////////////////////// THIS COMPONENT IS BEING RENDERED IN THE *POST* COMPONENT
@@ -36,7 +35,11 @@ export default class Edit extends Component {
       <section className="Edit__parent">
 
         {/* This is the input field where you can edit the text */}
-        <textarea className="Edit__textarea" value={ text } onChange={ ( e ) => this.updateText( e.target.value ) }></textarea>
+        <textarea 
+        className="Edit__textarea" 
+        value={ text } 
+        onChange={ ( e ) => this.updateText( e.target.value ) }
+        ></textarea>
 
         <div className="Edit__controls">
           {/* This saves your changes made */}
